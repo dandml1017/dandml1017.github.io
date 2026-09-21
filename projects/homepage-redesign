@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage Redesign + Global Block System — Danielle LaBruzzo</title>
+<meta name="description" content="Case study: redesigning the ALS Association homepage into a dynamic mission hub to drive donations, engagement, and connection.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Danielle LaBruzzo</a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+      <p class="eyebrow">Case Study</p>
+      <h1>Homepage Redesign + Global Block System</h1>
+      <p class="hero-lede">Transforming a static homepage into a dynamic mission hub — and a stronger engine for donations, engagement, and connection.</p>
+
+      <dl class="meta-grid">
+        <div><dt>Industry</dt><dd>Health Nonprofit</dd></div>
+        <div><dt>Timeline</dt><dd>12 weeks</dd></div>
+        <div><dt>My Role</dt><dd>UX/Product Manager</dd></div>
+        <div><dt>Team</dt><dd>Developers, Content, Marketing</dd></div>
+        <div><dt>Platform</dt><dd>Drupal</dd></div>
+      </dl>
+
+      <a class="btn btn-primary" href="https://als.org" target="_blank" rel="noopener noreferrer">Visit Live Site →</a>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+        <figcaption>Multi-device mockup (laptop, tablet, phone) of the redesigned ALS.org homepage — nav bar, a "My State" geolocation widget, and hero photography of walk participants.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>The Problem</h2>
+      <p class="lead-quote">"The homepage of a nationwide nonprofit is often the first — and sometimes only — impression a visitor gets. Ours wasn't working hard enough."</p>
+      <ul class="bullet-list">
+        <li>Donation entry point was a single header button with low visibility &amp; conversion rates.</li>
+        <li>No geographic personalization — users had to hunt for state-specific programs &amp; resources.</li>
+        <li>Events and programs were scattered throughout the site with no clear wayfinding.</li>
+        <li>Mission, urgency, nor community was communicated through the homepage.</li>
+      </ul>
+      <figure class="image-placeholder">
+        <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+        <figcaption>Original homepage headline ("ALS is a progressive neurodegenerative disease and we need your help to find a cure.") above a geometric graphic reading "Research," "Nationwide Advocacy," and "Local Care," alongside a photo representing a person living with ALS and a caregiver.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Goals</h2>
+      <ul class="bullet-list">
+        <li>Increase donor conversion by surfacing a prominent, embedded donation form.</li>
+        <li>Reduce friction for users seeking immediate local resources &amp; programming.</li>
+        <li>Communicate organizational identity — global research, nationwide advocacy, local care — at a glance.</li>
+        <li>Drive event participation and volunteerism through clearer pathways.</li>
+        <li>Deepen emotional connection with the mission through story.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Discovery &amp; Research</h2>
+      <p>Before drafting the solution, I needed to understand how visitors were actually using the homepage and where we were losing them. I reviewed traffic analytics, heatmaps, and conducted stakeholder interviews with internal teams including marketing, programs, and development (fundraising).</p>
+      <h3>Findings</h3>
+      <ul class="bullet-list">
+        <li>High bounce rates and shallow scroll depth on the homepage.</li>
+        <li>13% clickthrough rate on the donation button in the header — well below industry standards.</li>
+        <li>Users from state-specific email campaigns were landing on the homepage with no clear path to local resources.</li>
+        <li>Flagship fundraising events like Walk to Defeat ALS were underrepresented on the homepage despite being top traffic drivers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Audience</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">User Type</th><th scope="col">Primary Need</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>People living with ALS &amp; caregivers</td><td>Find local resources, programs &amp; support</td></tr>
+            <tr><td>Donors &amp; prospects</td><td>Understand mission, give quickly</td></tr>
+            <tr><td>Event participants</td><td>Register, find their local event</td></tr>
+            <tr><td>Advocates &amp; volunteers</td><td>Get involved, take action</td></tr>
+            <tr><td>Corporate partners</td><td>Understand our scale and credibility</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>The Solution</h2>
+      <p>The redesigned homepage is structured as a progressive narrative — orienting visitors, connecting them to local relevance, showcasing the breadth of the mission, and building toward emotional commitment.</p>
+
+      <ol class="block-list">
+        <li>
+          <h3>Hero + Embedded Donation Form</h3>
+          <p>Moved the donation experience from a single header button to a full hero unit with an embedded form offering one-time and monthly giving. This reduced the steps to donate and surfaced the action at zero scroll depth.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>Hero section with embedded donation widget — one-time/monthly tabs, preset and custom donation amounts, and a "Donate" button.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Geolocation Block</h3>
+          <p>Detects user location and directs users to state-specific pages with program, resource, and event information. This solves the core wayfinding problem for users arriving from state-level campaigns or searching for local help.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>"Get Local Support" banner with a state dropdown and a "Go to [state]" button.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Nationwide Programs &amp; Services Quick Links</h3>
+          <p>Provides a scannable navigation block for users who know what they're looking for. This reduces reliance on the main nav and flattens the path to key support destinations.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>Four-card grid: Programs and Services, Certified Centers and Clinics, ALS Insurance Navigator™, and The Hugh and Herbert Hoffman ALS Impact Fund.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Mission Priorities Block</h3>
+          <p>Communicates the three pillars — global research, nationwide advocacy, local care — in a visual, digestible format. Answers the first question any new visitor has: what does this organization actually do?</p>
+        </li>
+        <li>
+          <h3>Get Involved Carousel</h3>
+          <p>Surfaces the full range of engagement pathways: Walk to Defeat ALS, marathon and cycling events, community events, the annual conference, corporate partnerships, volunteering, and advocacy. Designed to serve both first-time visitors and returning supporters looking for new ways to connect.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>Horizontal photo carousel of event imagery with a "Find an Event" call to action.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Organizational Story Block</h3>
+          <p>Provides a deeper narrative about the organization's founding, mission, and commitment to research and a cure. Builds trust and emotional resonance — especially important for major gift prospects and first-time visitors evaluating the organization.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>Mosaic grid: mission statement panel, Ice Bucket Challenge history, research funding stats ($160M+ committed, 580+ research studies), and advocacy photography.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Monthly Donor CTA</h3>
+          <p>Closes the page with a high-impact ask: a personal story, quote, and image from someone living with ALS, paired with a direct invitation to join the monthly giving program. Uses emotional narrative to motivate the highest-value conversion on the page.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>Personal story feature (Bhumi Pathak) with a "Donate Monthly" call to action and pull-quote.</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Key Decisions</h2>
+
+      <h3>Embedded form vs. traditional donate button?</h3>
+      <p>The embedded form places the donation experience directly on the user's page — no redirect, no extra click.</p>
+      <ul class="bullet-list">
+        <li>Fewer steps = higher conversion. Every additional page load loses donors.</li>
+        <li>Donors never leave the site, so trust stays high and branding stays consistent.</li>
+        <li>Amounts, impact statements, and social proof can sit right alongside the form.</li>
+      </ul>
+
+      <h3>Why geolocation?</h3>
+      <p>Geolocation transforms a one-size-fits-all experience into one that feels personally relevant to each user, which drives both higher donor conversion and higher program uptake from our constituents.</p>
+
+      <h3>Prioritizing the block order</h3>
+      <p>Feel → Find your place → Trust → Be inspired → Act.</p>
+
+      <h3>Cuts and push-back</h3>
+      <p>A newsletter sign-up embed was cut because it required a reliable two-way sync with Salesforce that couldn't be guaranteed. A broken or duplicating form creates data hygiene problems that cost more to fix than the form is worth. We moved forward with capturing emails through the donate flow and registration for programs and services instead, and will revisit the standalone embed once the Salesforce integration is stable.</p>
+
+      <h3>Aligning stakeholders</h3>
+      <ol class="bullet-list numbered">
+        <li>Show who's visiting and what they're doing, via user personas.</li>
+        <li>Determine the most important actions — inspiring donation and connecting resources.</li>
+        <li>Separate important from first.</li>
+        <li>Propose an order with reasoning.</li>
+        <li>Address concerns &amp; establish a review period.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Outcomes</h2>
+      <p class="section-note">Final metrics are pending reporting from the live site and will be added once available.</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Category</th><th scope="col">Before</th><th scope="col">After</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Donation CTR</td><td>—</td><td>—</td></tr>
+            <tr><td>Scroll depth</td><td>—</td><td>—</td></tr>
+            <tr><td>Bounce rate</td><td>—</td><td>—</td></tr>
+            <tr><td>Local content engagement</td><td>—</td><td>—</td></tr>
+            <tr><td>Event CTR</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Reflection</h2>
+      <p>This homepage redesign reinforced something I carry into every project: structure is strategy. The order of blocks isn't decoration — it's an argument about what matters and when. The hardest part of this project wasn't the design; it was aligning stakeholders with competing priorities across fundraising, programs, and marketing — each of whom had legitimate claims on homepage real estate. Building a shared framework around user needs, and tying every block to a specific audience job, gave me a neutral language for those conversations.</p>
+      <p>If I were to do this again, I'd invest more heavily in pre-launch usability testing with actual donors and community members, rather than relying primarily on internal stakeholder input and analytics. The geolocation block in particular would have benefited from more direct user feedback earlier in the process.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap case-footer">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Danielle LaBruzzo</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
