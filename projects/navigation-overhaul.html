@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Overhaul — Danielle LaBruzzo</title>
+<meta name="description" content="Case study: restructuring the ALS Association's information architecture and navigation system to surface buried content and enable lateral movement across the site.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Danielle LaBruzzo</a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+      <p class="eyebrow">Case Study</p>
+      <h1>Navigation Overhaul</h1>
+      <p class="hero-lede">Five entry points into a sprawling national nonprofit site. Users hit a wall, backtracked, and gave up. I redesigned the navigation from the ground up — restructuring the IA and implementing a dropdown system that opened up 72 previously buried pages and let users choose their own path.</p>
+
+      <dl class="meta-grid">
+        <div><dt>Industry</dt><dd>Health Nonprofit</dd></div>
+        <div><dt>Timeline</dt><dd>12 weeks</dd></div>
+        <div><dt>My Role</dt><dd>UX/Product Manager</dd></div>
+        <div><dt>Team</dt><dd>Developers, Content, Marketing</dd></div>
+        <div><dt>Platform</dt><dd>Drupal</dd></div>
+      </dl>
+
+      <a class="btn btn-primary" href="https://als.org" target="_blank" rel="noopener noreferrer">Visit Live Site →</a>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+        <figcaption>Laptop and mobile mockup of the ALS.org site with an open "Ways to Give" mega-menu dropdown, alongside the top nav bar and a fundraising-event photo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Challenge</h2>
+      <p>A navigation system should work like a map — it should show you where you are, where you can go, and make the path obvious. Ours was doing none of that. Five buttons sat at the top of every page, each leading to a section landing page. From there, users relied entirely on side navigations buried within each section to go deeper. If you didn't already know where something lived, you weren't going to find it.</p>
+      <p>For a nationwide nonprofit with programs spanning local patient care, global research, nationwide advocacy, fundraising events, and volunteer opportunities, this was a serious problem. Entire categories of content — resources, research initiatives, ways to get involved — were functionally invisible to anyone who didn't already know to look for them.</p>
+      <p><strong>The core issues:</strong></p>
+      <ul class="bullet-list">
+        <li>5 flat top-level buttons gave users no preview of what lived beneath them.</li>
+        <li>Deep content was only accessible via section-specific side navs, requiring users to first land in the right section before they could navigate within it.</li>
+        <li>Users couldn't move laterally across the site — jumping from, say, a research page to an advocacy resource required returning to a section landing page first.</li>
+        <li>Mobile navigation mirrored this flat structure, compounding the problem on smaller screens.</li>
+        <li>High-value pages were effectively hidden, depressing traffic and engagement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Goals</h2>
+      <ul class="bullet-list">
+        <li>Surface deep and underutilized content directly from the global navigation.</li>
+        <li>Enable lateral movement across the site without requiring detours through landing pages.</li>
+        <li>Create a consistent navigation experience across desktop and mobile.</li>
+        <li>Maintain and complement the existing side navigation system rather than replacing it.</li>
+        <li>Reduce the number of steps to reach key destinations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Discovery</h2>
+      <p>We started by auditing the existing site structure and cross-referencing it with analytics to identify which pages were being reached — and which weren't. The gap was significant. A large portion of our content was receiving minimal organic traffic, not because users weren't interested, but because they had no clear path to it. We supplemented the analytics review with usability findings and stakeholder interviews across programs, marketing, and development.</p>
+      <h3>Findings</h3>
+      <ul class="bullet-list">
+        <li>Analytics showed users were frequently exiting from section landing pages rather than navigating deeper — they arrived, didn't see an obvious next step, and left.</li>
+        <li>Pages per session was low, suggesting users weren't discovering related content.</li>
+        <li>Nav click data showed the 5 top-level buttons were being used unevenly — clicks were heavily concentrated on one or two sections, while others were rarely touched.</li>
+        <li>Usability findings revealed users were unaware that side navs existed until they were pointed out.</li>
+        <li>Stakeholders across programs and marketing independently flagged the same problem: content they considered high-priority was going unseen.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Users</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">User Type</th><th scope="col">Navigation Need</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>People living with the disease</td><td>Fast path to local resources, support programs, research updates</td></tr>
+            <tr><td>First-time visitors</td><td>Orientation — what is this org and what do they offer?</td></tr>
+            <tr><td>Donors &amp; prospects</td><td>Find giving opportunities, events, impact stories</td></tr>
+            <tr><td>Advocates &amp; volunteers</td><td>Access action tools, event registration, training resources</td></tr>
+            <tr><td>Returning visitors</td><td>Move quickly between known sections without retracing steps</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Solution</h2>
+      <p>The redesigned navigation system introduces a responsive dropdown on desktop and a restructured mobile menu — both built to work in tandem with the existing side navigation rather than replace it. The global nav now gives every user, on every page, a full map of the site's most important destinations. The side nav retains its role as the guide for depth within a section.</p>
+
+      <ol class="block-list">
+        <li>
+          <h3>Desktop Dropdown</h3>
+          <p>Hovering or clicking a top-level item now reveals a structured dropdown that surfaces key subcategories and high-priority pages directly. Users can see — and jump to — deep content without passing through a section landing page.</p>
+          <p class="todo-note"><strong>To fill in:</strong> describe your column structure, grouping logic, or any featured link treatments used.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>The "Navigating ALS" dropdown open on als.org, showing "Living with ALS" and "Resources and Support" columns plus a "Get Local Support" side panel.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Mobile Navigation</h3>
+          <p class="todo-note"><strong>To fill in:</strong> describe your mobile approach — accordion expand, full-screen overlay, hamburger menu behavior, etc.</p>
+          <p>The mobile nav mirrors the desktop hierarchy while adapting to touch interaction and limited screen real estate. This was a deliberate parity decision — mobile users, who represented a significant share of traffic, had been most disadvantaged by the flat structure.</p>
+          <p class="todo-note"><strong>To fill in:</strong> the actual share/percentage of mobile traffic.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>Mobile accordion menu on als.org with the "Ways to Give" panel expanded into "Donate" and "Other Ways to Give" subsections.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <h3>Relationship with Side Navigation</h3>
+          <p>The global nav and side nav now serve distinct but complementary roles. The dropdown is for orientation and lateral movement — getting anywhere, from anywhere. The side nav is for depth — going further within a section once you've arrived. Users who arrive via the dropdown land in context, with the side nav already there to guide them deeper.</p>
+          <figure class="image-placeholder">
+            <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+            <figcaption>A "Support for Caregivers" content page with the "For Caregivers" side navigation listing related resources.</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Key Decisions</h2>
+      <p class="section-note">These are the open questions worth answering for this case study — add your reasoning under each.</p>
+
+      <h3>How did you audit the existing IA?</h3>
+      <p class="todo-note">Add your answer — e.g., a spreadsheet of all pages, an analytics overlay, tree testing, card sorting.</p>
+
+      <h3>How did you decide the top-level categories?</h3>
+      <p class="todo-note">Add your answer — e.g., did they change from the original 5, or did the structure stay and just open up?</p>
+
+      <h3>How did you handle content that didn't fit neatly into one category?</h3>
+      <p class="todo-note">Add your answer — e.g., cross-linking, featured placements, audience-based groupings.</p>
+
+      <h3>What got cut from the dropdown?</h3>
+      <p class="todo-note">Add your answer — not everything could be surfaced; how did you prioritize, and who did you have to say no to?</p>
+
+      <h3>How did you test before launch?</h3>
+      <p class="todo-note">Add your answer — e.g., tree testing, prototype walkthroughs, stakeholder reviews.</p>
+
+      <h3>How did mobile constraints shape the desktop design, or vice versa?</h3>
+      <p class="todo-note">Add your answer.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Outcomes</h2>
+      <p class="section-note">Real analytics, research findings, and stakeholder quotes weren't finalized yet — add them here once available.</p>
+
+      <h3>Analytics</h3>
+      <ul class="bullet-list">
+        <li class="todo-note">Add: change in pages per session following launch.</li>
+        <li class="todo-note">Add: change in bounce rate on section landing pages.</li>
+        <li class="todo-note">Add: traffic change for previously underperforming sections after being surfaced in the dropdown.</li>
+        <li class="todo-note">Add: change in mobile navigation engagement.</li>
+      </ul>
+
+      <h3>Usability Research</h3>
+      <ul class="bullet-list">
+        <li class="todo-note">Add: a key finding from post-launch testing (e.g., time to locate a target page vs. baseline).</li>
+        <li class="todo-note">Add: qualitative themes from user feedback.</li>
+      </ul>
+
+      <h3>Stakeholder Feedback</h3>
+      <ul class="bullet-list">
+        <li class="todo-note">Add: a quote from a programs stakeholder about content discoverability.</li>
+        <li class="todo-note">Add: a quote from marketing or leadership about the navigation better reflecting the organization's breadth.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Reflection</h2>
+      <p>Navigation projects have a way of surfacing every unresolved question an organization has about itself — who are we for, what do we lead with, what do we hide? The IA work at the center of this project was as much organizational as it was design. Getting alignment required building a shared framework that could outlast any individual stakeholder's preference: we kept returning to user tasks and click data as the neutral arbiter when conversations got political.</p>
+      <p>The tandem system — dropdown for movement, side nav for depth — was the decision I'm most satisfied with in retrospect. It would have been easier to consolidate everything into one nav pattern, but it would have served users worse. The two systems do genuinely different jobs, and honoring that distinction made both of them better.</p>
+      <p>If I were to approach this again, I'd run formal tree testing earlier in the process, before any visual design work began. We relied heavily on analytics and stakeholder input to validate the IA, and while both were valuable, direct user testing of the hierarchy would have given us faster, cleaner signal on the decisions that mattered most.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Explore More</h2>
+      <p class="section-note">Selected projects that reflect my approach to design, development, and execution.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Homepage Redesign + Global Block System</h3>
+          <p>Redesigned the ALS Association homepage into a dynamic mission hub — embedding donation and geolocation tools to drive donor conversion and local engagement.</p>
+          <div class="card-tags">
+            <span class="tag">UX Strategy</span>
+            <span class="tag">Health Nonprofit</span>
+          </div>
+          <a class="card-link" href="homepage-redesign.html">View case study →</a>
+        </article>
+      </div>
+      <p style="margin-top: 2rem;">
+        <a class="btn btn-secondary" href="../index.html#projects">View All Projects</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section case-footer">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Danielle LaBruzzo</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
