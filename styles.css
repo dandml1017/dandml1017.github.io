@@ -448,6 +448,13 @@ nav[aria-label="Primary"] {
   margin-top: 0.6rem;
 }
 
+.image-placeholder img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
 .block-list {
   list-style: none;
   padding: 0;
