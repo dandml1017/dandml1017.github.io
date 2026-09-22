@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Search Optimization — Danielle LaBruzzo</title>
+<meta name="description" content="Case study: retiring a failing chatbot and rebuilding the ALS Association's site search into a strategic, data-driven system.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Danielle LaBruzzo</a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+      <p class="eyebrow">Case Study</p>
+      <h1>Site Search Optimization</h1>
+      <p class="hero-lede">From a failing chatbot to a strategic search system — how data exposed a broken user experience and drove a mission-critical rebuild.</p>
+
+      <dl class="meta-grid">
+        <div><dt>Industry</dt><dd>Health Nonprofit</dd></div>
+        <div><dt>Timeline</dt><dd>16 weeks</dd></div>
+        <div><dt>My Role</dt><dd>UX/Product Manager</dd></div>
+        <div><dt>Team</dt><dd>Developers, Content, Marketing</dd></div>
+        <div><dt>Platform</dt><dd>Drupal</dd></div>
+      </dl>
+
+      <a class="btn btn-primary" href="https://als.org" target="_blank" rel="noopener noreferrer">Visit Live Site →</a>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+        <figcaption>The ALS.org search page — filter pills, a search box, sidebar filters for audience type, content type, location, and date, and a results list.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Challenge</h2>
+      <p class="lead-quote">For the past 4 years, our primary tool for helping users find what they needed on our site was an AI chatbot. On paper, it was a reasonable solution — a conversational interface that could direct users to local resources, clinical trials, donation options, and support programs. In practice, it wasn't working. And the data made that impossible to ignore.</p>
+
+      <p><strong>Over a 6 month period:</strong></p>
+      <ul class="bullet-list">
+        <li>The chatbot was viewed <strong>1.9 million times</strong>.</li>
+        <li>Of those, just <strong>5,114 (0.48%)</strong> of users engaged with it at all.</li>
+        <li>Of the conversations that did happen, users who submitted feedback more often rated the bot <strong>not helpful (469)</strong> than <strong>helpful (417)</strong>.</li>
+      </ul>
+
+      <p>The button click data told an equally important story. The user intent was there. The tool just wasn't meeting it:</p>
+      <ul class="bullet-list">
+        <li><strong>1,837</strong> clicks on "Ask a Question"</li>
+        <li><strong>1,554</strong> on "Find Local Support"</li>
+        <li><strong>972</strong> on "Recent ALS Diagnosis"</li>
+      </ul>
+
+      <h3>The Core Issues for Discovery</h3>
+      <ul class="bullet-list">
+        <li>The chatbot was being largely ignored (0.48% engagement rate).</li>
+        <li>When users did engage, it failed more than it succeeded (more not-helpful ratings than helpful).</li>
+        <li>No-match failures leaving users stranded with no fallback.</li>
+        <li>High button click volume with low resolution.</li>
+        <li>Site search had no content weighting.</li>
+        <li>No filters on the search results page.</li>
+        <li>No content review mechanism to filter outdated pages.</li>
+      </ul>
+
+      <figure class="image-placeholder">
+        <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+        <figcaption>The ALS.org "Ways to Give" page, showing filter checkboxes and content cards — an example of the unfiltered, unweighted content the old search and chatbot experience surfaced.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Goals</h2>
+      <ul class="bullet-list">
+        <li>Replace the failing chatbot with a transparent, controllable, user-responsive search system.</li>
+        <li>Reduce zero-result searches by improving how content is indexed and weighted.</li>
+        <li>Give users control over search results through filters and faceted navigation.</li>
+        <li>Give content/marketing control over what surfaces for priority queries through pinned content and weighting tools.</li>
+        <li>Implement a content tagging and review system so outdated material can be flagged and managed.</li>
+        <li>Introduce AI-assisted search to handle natural language queries, synonyms, and intent interpretation.</li>
+        <li>Establish search as a maintained, strategic channel.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Discovery</h2>
+      <p>Rather than treating search and the chatbot as separate issues, I proposed a unified search optimization initiative that would retire the chatbot and replace its intended function with something structurally more feasible for the organization.</p>
+
+      <h3>Chatbot Performance (6-Month Data)</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Explanation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Chatbot views</td><td>1,926,429</td><td>Nearly every site visitor encountered it</td></tr>
+            <tr><td>Unique views</td><td>1,075,274</td><td>Over a million individual users saw it</td></tr>
+            <tr><td>Engaged users</td><td>5,114</td><td>0.48% chose to interact</td></tr>
+            <tr><td>Helpful conversations</td><td>417</td><td>Of those who gave feedback, only 417 users rated the bot helpful</td></tr>
+            <tr><td>Not helpful conversations</td><td>469</td><td>More failures than successes among those who rated</td></tr>
+            <tr><td>Recurring donation cancellations</td><td>190</td><td>Direct negative mission impact vs. respecting donor intent</td></tr>
+            <tr><td>No match requests</td><td>39</td><td>Users asking questions the system couldn't answer</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Button Click Data</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Button</th><th scope="col">Clicks</th><th scope="col">Intent</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ask a question</td><td>1,837</td><td>Open-ended</td></tr>
+            <tr><td>Find local support</td><td>1,554</td><td>Location-based resources — persistent failure point</td></tr>
+            <tr><td>Recent ALS diagnosis</td><td>972</td><td>Newly diagnosed — seeking immediate guidance</td></tr>
+            <tr><td>Connect with a local office</td><td>902</td><td>Direct local connection — repeatedly unresolved</td></tr>
+            <tr><td>Make a donation</td><td>540</td><td>Intent present vs. 190 cancellations</td></tr>
+            <tr><td>Research and clinical trials</td><td>339</td><td>High stakes research navigation</td></tr>
+            <tr><td>Local resources</td><td>287</td><td>Direct local connection — repeated failures</td></tr>
+            <tr><td>Clinical trials for patients</td><td>191</td><td>Specific, precise needs requiring accurate and up-to-date answers</td></tr>
+            <tr><td>Assistance grants program</td><td>162</td><td>Specific program queries — high consequence if wrong</td></tr>
+            <tr><td>Equipment donation</td><td>129</td><td>Specific program — clear intent</td></tr>
+            <tr><td>Find an ALS clinic</td><td>123</td><td>Clear intent — critical for newly diagnosed</td></tr>
+            <tr><td>Participate in research</td><td>115</td><td>Research engagement — underserved</td></tr>
+            <tr><td>Insurance denials and appeals</td><td>100</td><td>High stakes, high-precision — worst place to fail</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>User Research</h2>
+      <ul class="bullet-list">
+        <li>Users describe search as a first resort upon arrival.</li>
+        <li>Assistive technology users rely on search more heavily.</li>
+      </ul>
+      <p class="section-note">The table below is partially filled in — add search behavior and failure modes for the remaining user types once that research is complete.</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">User Type</th><th scope="col">Search Behavior</th><th scope="col">What Failure Looks Like</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Newly diagnosed patients &amp; caregivers</td><td>Immediate need — local clinics, resources, programs</td><td>Dead ends at the highest-stakes moments of their journey</td></tr>
+            <tr><td>Patients managing ongoing care</td><td>Research updates, clinical trials, assistance programs, events</td><td>Outdated or irrelevant results eroding trust</td></tr>
+            <tr><td>Donors &amp; prospects</td><td>Giving options, events, impact stories</td><td>Buried results, cancellation pathway</td></tr>
+            <tr><td>Assistive technology users</td><td>Search as primary navigation method</td><td>Failures hit harder with no alt path</td></tr>
+            <tr><td>Researchers looking for funding opportunities</td><td>—</td><td>—</td></tr>
+            <tr><td>Corporate partners</td><td>—</td><td>—</td></tr>
+            <tr><td>Event participants &amp; volunteers</td><td>—</td><td>—</td></tr>
+            <tr><td>Advocates</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Solution</h2>
+      <figure class="image-placeholder">
+        <div class="image-placeholder-box" aria-hidden="true">Add image</div>
+        <figcaption>The redesigned ALS.org search results page with audience-type, content-type, location, and date filters, and weighted results.</figcaption>
+      </figure>
+
+      <ol class="block-list">
+        <li>
+          <h3>Content Weighting</h3>
+          <p>Establishing a weighting framework that elevates mission-critical content in search rankings. Clinical resources, flagship programs, and primary giving pages should surface above tangential blog posts or archived event pages for relevant queries.</p>
+          <p class="todo-note"><strong>To fill in:</strong> your weighting criteria — recency, content type, manual priority flags, engagement signals, etc.</p>
+        </li>
+        <li>
+          <h3>Content Tagging &amp; Review System</h3>
+          <p>Implementing a tagging system that serves two purposes: improving search indexing by giving the engine richer signals about what each page is and who it's for, and enabling a content review workflow so the content team can flag pages for update, archival, or suppression. This addresses the root cause of outdated content surfacing in results — and gives the content team ownership over search quality for the first time.</p>
+        </li>
+        <li>
+          <h3>Filters &amp; Faceted Search</h3>
+          <p>Adding filters to the main search results page so users can narrow by content type, topic, audience, or other relevant facets. A newly diagnosed patient searching for clinical resources and a donor searching for events are using the same search bar with very different intent — filters let them each quickly find what they came for.</p>
+        </li>
+        <li>
+          <h3>Pinned Content</h3>
+          <p>Giving the marketing and content team the ability to pin specific pages to the top of results for defined search terms. Ensures that high-priority queries — the organization's name, flagship program names, key disease terms, major events — always surface the right destination first. Directly addresses the stakeholder frustration that high-priority pages had no guaranteed visibility.</p>
+        </li>
+        <li>
+          <h3>AI-Assisted Search</h3>
+          <p>Introducing AI-assisted search to handle the gap between how users type and how content is labeled. Natural language queries, misspellings, synonyms, and intent-based searches will be interpreted and matched more intelligently — delivering on the promise the chatbot was supposed to fulfill, through a mechanism that's transparent, accurate, and doesn't strand users when it doesn't have an answer.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Measuring Success</h2>
+      <p class="section-note">The first three rows carry real baseline data from the chatbot. The remaining rows need real current values and targets once search analytics are in place.</p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Metric</th><th scope="col">Current Baseline</th><th scope="col">Target</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Chatbot engagement rate</td><td>0.48%</td><td>Retired — replaced by search</td></tr>
+            <tr><td>Helpful vs. not helpful conversations</td><td>417 helpful / 469 not helpful</td><td>Retired</td></tr>
+            <tr><td>Recurring donation cancellations via chatbot</td><td>190 / 6 months</td><td>Eliminated</td></tr>
+            <tr><td>Zero-result search rate</td><td>—</td><td>—</td></tr>
+            <tr><td>Search click-through rate</td><td>—</td><td>—</td></tr>
+            <tr><td>% of searches using filters</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Pinned content impressions</td><td>N/A</td><td>—</td></tr>
+            <tr><td>Content review cycle — avg. age of flagged pages</td><td>—</td><td>—</td></tr>
+            <tr><td>User satisfaction with search</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Process &amp; Current Thinking</h2>
+      <p class="section-note">Open questions to work through as this project progresses — add your reasoning under each.</p>
+
+      <h3>How are you sequencing the five workstreams?</h3>
+      <p class="todo-note">Add your answer — e.g., what ships first and why: highest impact for lowest effort?</p>
+
+      <h3>How are you defining the weighting framework?</h3>
+      <p class="todo-note">Add your answer — e.g., who decides what's high-priority, and what signals feed into it?</p>
+
+      <h3>How did you scope the filter taxonomy?</h3>
+      <p class="todo-note">Add your answer — e.g., how did you decide which filter categories to offer?</p>
+
+      <h3>How are you approaching the AI search implementation?</h3>
+      <p class="todo-note">Add your answer — e.g., vendor evaluation, platform-native feature, or custom build, and what criteria you're using given the health context.</p>
+
+      <h3>How are you involving the content team?</h3>
+      <p class="todo-note">Add your answer — they're both stakeholders and end users of the tagging and review tools.</p>
+
+      <h3>How will you measure success?</h3>
+      <p class="todo-note">Add your answer — define your before/after metrics.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Reflection</h2>
+      <p>The chatbot data was clarifying in a way that doesn't always happen in product work. Sometimes the case for change is ambiguous — competing signals, reasonable disagreements, legitimate arguments for iteration over replacement. This wasn't that. The numbers told a clean story, and the right response was to act on them rather than rationalize around them.</p>
+      <p>What this project has reinforced is something I try to bring to every initiative: the most important question isn't "how do we improve this feature" — it's "is this the right feature at all?" The chatbot existed because at some point it seemed like a good solution. Nobody went back to ask whether it was still a good solution, or whether it had ever really worked. Pulling that thread — and being willing to follow the data to an uncomfortable conclusion — is what created the opening for something better.</p>
+      <p>The AI-assisted search workstream is the one I'm approaching most carefully. The chatbot's failure is partly a cautionary tale about deploying AI in a health context without sufficient accuracy and fallback design. The replacement has to do better — not just technically, but in terms of what happens when it doesn't know the answer. A search system that returns no results is honest. A chatbot that confidently gives wrong information to a patient navigating an ALS diagnosis is something else entirely.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <h2>Explore More</h2>
+      <p class="section-note">Selected projects that reflect my approach to design, development, and execution.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Homepage Redesign + Global Block System</h3>
+          <p>Redesigned the ALS Association homepage into a dynamic mission hub — embedding donation and geolocation tools to drive donor conversion and local engagement.</p>
+          <div class="card-tags">
+            <span class="tag">UX Strategy</span>
+            <span class="tag">Health Nonprofit</span>
+          </div>
+          <a class="card-link" href="homepage-redesign.html">View case study →</a>
+        </article>
+        <article class="card">
+          <h3>Navigation Overhaul</h3>
+          <p>Restructured the ALS Association's information architecture and navigation system to surface buried content and enable lateral movement across the site.</p>
+          <div class="card-tags">
+            <span class="tag">Information Architecture</span>
+            <span class="tag">Health Nonprofit</span>
+          </div>
+          <a class="card-link" href="navigation-overhaul.html">View case study →</a>
+        </article>
+      </div>
+      <p style="margin-top: 2rem;">
+        <a class="btn btn-secondary" href="../index.html#projects">View All Projects</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section case-footer">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#projects">← Back to Projects</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Danielle LaBruzzo</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
